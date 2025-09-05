@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Twitch Giveaway</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/tmi.js@1.8.5/dist/tmi.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1>Twitch Giveaway 🎲</h1>
+
+  <div class="section">
+    <button id="loginBtn">Se connecter avec Twitch</button>
+    <div id="status">Non connecté</div>
+  </div>
+
+  <div class="section">
+    <label for="keyword">Mot-clé pour participer :</label>
+    <input type="text" id="keyword" placeholder="Ex: !enter" value="!enter" />
+  </div>
+
+  <div class="section">
+    <label for="numWinners">Nombre de gagnants :</label>
+    <input type="number" id="numWinners" value="1" min="1" />
+  </div>
+
+  <div class="section">
+    <button id="startBtn">Lancer le Giveaway</button>
+    <button id="nextWinnerBtn" disabled>Prochain gagnant</button>
+    <button id="copyOverlayBtn">Copier lien overlay pour OBS</button>
+  </div>
+
+  <div class="section">
+    <h2>Participants (<span id="totalEntries">0</span>)</h2>
+    <ul id="participantsList"></ul>
+  </div>
+
+  <div class="section">
+    <h2>Gagnants</h2>
+    <ul id="winnersList"></ul>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
