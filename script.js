@@ -41,7 +41,7 @@ window.addEventListener("load", () => {
       fetch("https://api.twitch.tv/helix/users", {
         headers: {
           "Authorization": `Bearer ${oauthToken}`,
-          "Client-Id": "TON_CLIENT_ID_TWITCH"
+          "Client-Id": "076pnhzc4n17ee57wy4bylq8od7z8w"
         }
       })
       .then(res => res.json())
