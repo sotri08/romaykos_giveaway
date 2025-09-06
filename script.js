@@ -25,7 +25,7 @@ let oauthToken = "";
 
 // Connect Twitch via OAuth implicit flow
 loginBtn.addEventListener("click", () => {
-  const clientId = "TON_CLIENT_ID_TWITCH"; // Remplace par ton client ID Twitch
+  const clientId = "btqiji4z2k335xpgmy9roji6yyhqoo"; // Remplace par ton client ID Twitch
   const redirectUri = window.location.origin + window.location.pathname;
   const scope = "chat:read";
   const url = `https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}`;
